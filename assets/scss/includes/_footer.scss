@@ -1,0 +1,25 @@
+footer {
+	#footer {
+		height: 100px;
+		background-color: #70001A;
+		font-size: 1.35rem;
+		color: #FFFFFF;
+		@include flex(row , null , center);
+	}
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+	
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 769px) and (max-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

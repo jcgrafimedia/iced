@@ -1,0 +1,539 @@
+
+/* Instituto Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+#container_instituto {
+	h3 {
+		text-align: center;
+		font-weight: bold;
+		margin-bottom: 30px;
+	}
+	p {
+		text-align: justify;
+	}
+	.container_article {
+		div {
+			width: 100%;
+			@include flex(row , center , center);
+			img {
+				width: 250px;
+			}
+		}
+		.text {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 550px) {
+	h3 {
+		font-size: 1.6rem;
+	}
+	.container_article {
+		@include flex(column , center , center);
+		.text {
+			margin-top: 15px;
+		}
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 552px) and (max-width: 992px) {
+	h3 {
+		font-size: 2rem;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 993px) {
+	h3 {
+		font-size: 2.2rem;
+	}
+	.container_instituto {
+		div {
+			@include flex(row , center , center);
+		}
+	}
+}
+
+/* Acreditaciones Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+#container_acreditaciones {
+	h3 {
+		text-align: center;
+		font-weight: bold;
+		margin-bottom: 30px;
+	}
+	img {
+		margin: 20px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	p {
+		text-align: justify;
+	}
+}
+
+/* Organizacion Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+#container_estructura {
+	h3 {
+		text-align: center;
+		font-weight: bold;
+		margin-bottom: 30px;
+	}
+	.enlace_container {
+		width: 100%;
+		height: auto;
+		background-color: $bglink_container;
+		border-radius: 8px 0px 0px 8px;
+		border: 1px solid #DADADA;
+		margin: 20px 0px 20px 0px;
+		@include flex(row, flex-end , null);
+		.enlace {
+			width: 99%;
+			height: 38px;
+			background-color: $bg_body;
+			border-radius: 8px 0px 0px 8px;
+			@include flex(row, flex-start , center);
+			a {
+				margin-left: 20px;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+/* Organizacion / Direccion Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+#container_direccion {
+	h3 {
+		text-align: center;
+		font-weight: bold;
+		margin: 0px 20px 30px 20px;
+	}
+	p {
+		text-align: justify;
+	}
+	img {
+		margin: 40px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.autoridad {
+		text-align: center;
+		margin-bottom: 20px;
+		b {
+			font-size: 1.5rem;
+		}
+		span {
+			font-size: 1.3rem;
+		}
+	}
+	.contacto {
+		text-align: center;
+		b {
+			margin-right: 5px;
+		}
+	}
+}
+
+/* Organizacion / Cied Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+#container_secposgrado {
+	h3 {
+		text-align: center;
+		font-weight: bold;
+		margin: 0px 20px 30px 20px;
+	}
+	p {
+		text-align: justify;
+	}
+}
+
+/* Organizacion / Cied Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+#container_cied {
+	h3 {
+		text-align: center;
+		font-weight: bold;
+		margin: 0px 20px 30px 20px;
+	}
+	p {
+		text-align: justify;
+	}
+	ul {
+		margin-left: 30px;
+	}
+	img {
+		margin: 40px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.autoridad {
+		text-align: center;
+		margin-bottom: 20px;
+		b {
+			font-size: 1.5rem;
+		}
+		span {
+			font-size: 1.3rem;
+		}
+	}
+	.contacto {
+		text-align: center;
+		margin-bottom: 40px;
+		b {
+			margin-right: 5px;
+		}
+	}
+}
+
+/* Organizacion / Extension Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+#container_extension {
+	h3 {
+		text-align: center;
+		font-weight: bold;
+		margin: 0px 20px 30px 20px;
+	}
+	p {
+		text-align: justify;
+	}
+	ul {
+		margin-left: 30px;
+		a {
+			text-decoration: none;
+		}
+	}
+	img {
+		margin: 40px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.autoridad {
+		text-align: center;
+		margin-bottom: 20px;
+		b {
+			font-size: 1.5rem;
+		}
+		span {
+			font-size: 1.3rem;
+		}
+	}
+	.contacto {
+		text-align: center;
+		b {
+			margin-right: 5px;
+		}
+	}
+}
+
+/* Organizacion / Registros Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+#container_registros {
+	h3 {
+		text-align: center;
+		font-weight: bold;
+		margin: 0px 20px 30px 20px;
+	}
+	p {
+		text-align: justify;
+	}
+	img {
+		margin: 40px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.autoridad {
+		text-align: center;
+		margin-bottom: 20px;
+		b {
+			font-size: 1.5rem;
+		}
+		span {
+			font-size: 1.3rem;
+		}
+	}
+	.contacto {
+		text-align: center;
+		b {
+			margin-right: 5px;
+		}
+	}
+}
+
+/* Organizacion / Cursos y talleres / Educacion Sexual Styles
+   ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#container_educacion {
+	h3 {
+		text-align: center;
+		font-weight: bold;
+		margin: 0px 20px 30px 20px;
+	}
+	p {
+		text-align: justify;
+	}
+	img {
+		margin: 40px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	ul {
+		margin-left: 30px;
+	}
+	.sub_title {
+		color: $color_sub_title;
+		font-weight: bold;
+		font-size: 1.5rem;
+	}
+}
+
+/* Investigaciones / Tesis Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+   
+#container_tesis {
+	h3 {
+		text-align: center;
+		font-weight: bold;
+		margin: 0px 20px 30px 20px;
+	}
+	img {
+		margin: 40px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	p {
+		text-align: justify;
+	}
+	.sub_title {
+		color: $color_sub_title;
+		font-weight: bold;
+		font-size: 1.5rem;
+	}
+	table tbody tr td{
+		text-align: center;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+/* Infraestructura Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+#container_infraestructura {
+	h3 {
+		text-align: center;
+		font-weight: bold;
+		margin: 0px 20px 30px 20px;
+	}
+	img {
+		margin: 40px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.sub_title {
+		color: $color_sub_title;
+		font-weight: bold;
+		font-size: 1.5rem;
+	}
+	.tab-content {
+		padding: 30px 0px 10px 10px;
+		.content_img {
+			width: 100%;
+			height: auto;
+			@include flex(row,center,center);
+			flex-wrap: wrap;
+			img {
+				margin: 8px;
+			}
+		}
+	}
+}
+
+/* Egresados / Graduados  Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+#container_graduados {
+	h3 {
+		text-align: center;
+		font-weight: bold;
+		margin: 0px 20px 30px 20px;
+	}
+	img {
+		margin: 40px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	p {
+		text-align: justify;
+	}
+	ul {
+		margin-left: 30px;
+	}
+	.enlace_container {
+		width: 100%;
+		height: auto;
+		background-color: $bglink_container;
+		border-radius: 8px 0px 0px 8px;
+		border: 1px solid #DADADA;
+		margin: 20px 0px 20px 0px;
+		@include flex(row, flex-end , null);
+		.enlace {
+			width: 99%;
+			height: 38px;
+			background-color: $bg_body;
+			border-radius: 8px 0px 0px 8px;
+			@include flex(row, flex-start , center);
+			a {
+				margin-left: 20px;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+/* Egresados / Circulo Egresados  Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+#container_egresados {
+	h3 {
+		text-align: center;
+		font-weight: bold;
+		margin: 0px 20px 30px 20px;
+	}
+	img {
+		margin: 40px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	p {
+		text-align: justify;
+	}
+	ul {
+		margin-left: 30px;
+	}
+	.enlace_container {
+		width: 100%;
+		height: auto;
+		background-color: $bglink_container;
+		border-radius: 8px 0px 0px 8px;
+		border: 1px solid #DADADA;
+		margin: 20px 0px 20px 0px;
+		@include flex(row, flex-end , null);
+		.enlace {
+			width: 99%;
+			height: 38px;
+			background-color: $bg_body;
+			border-radius: 8px 0px 0px 8px;
+			@include flex(row, flex-start , center);
+			a {
+				margin-left: 20px;
+				text-decoration: none;
+			}
+		}
+	}
+}
+/* Egresados / Egresados 2013 Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+#container_egresados2013 {
+	h3 {
+		text-align: center;
+		font-weight: bold;
+		margin: 0px 20px 30px 20px;
+	}
+	img {
+		margin: 40px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	p {
+		text-align: justify;
+	}
+	ul {
+		margin-left: 30px;
+	}
+}
+
+/* Egresados / Bolsa  Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+#container_bolsa {
+	h3 {
+		text-align: center;
+		font-weight: bold;
+		margin: 0px 20px 30px 20px;
+	}
+	p {
+		text-align: justify;
+	}
+	ol {
+		margin-left: 30px;
+		li {
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+	.autoridad {
+		text-align: center;
+		margin-bottom: 20px;
+		b {
+			font-size: 1.5rem;
+		}
+		span {
+			font-size: 1.3rem;
+		}
+	}
+	#lugar {
+		@include flex (row , flex-end , center);
+		margin: 50px 0px 50px 0px;
+	}
+}
+
+/* Egresados / Normativa  Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+#container_normatividad {
+	h3 {
+		text-align: center;
+		font-weight: bold;
+		margin: 0px 20px 30px 20px;
+	}
+	p {
+		text-align: justify;
+	}
+	ul {
+		margin-left: 30px;
+	}
+	.sub_title {
+		color: $color_sub_title;
+		font-weight: bold;
+		font-size: 1.5rem;
+	}
+	a {
+		text-decoration: none;
+	}
+}

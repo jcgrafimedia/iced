@@ -1,0 +1,17 @@
+extends ../layouts/layout
+
+block content
+	section(id="container_comisiones" , class="container-fluid template_content")
+		div(class="row")
+			h3 PROCESO DE ADMISIÓN COMISIONES DE ADMISIÓN
+
+			<br>
+
+			div(class="table-responsive")
+				table(class="table table-bordered")
+					tbody
+						tr(class="active")
+							td(style="font-weight: bold; background-color: #E1E0E0;" , colspan="2") COMISIONES POR SEMESTRE
+						tr(class="active")
+							td: a(href="{{ ruta_base }}pdfs/publicaciones/comision_del_examen_de_admision_2015-II.pdf" , target="_blank") 2015-II
+							td: a(href="{{ ruta_base }}pdfs/publicaciones/comision_del_examen_de_admision_2015-I.pdf" , target="_blank") 2015-I

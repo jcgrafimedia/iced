@@ -1,0 +1,9 @@
+/*  Mixins
+	------------------------------------ */
+
+@mixin flex ($direction , $jc , $ai){
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $jc;
+	align-items: $ai;
+}

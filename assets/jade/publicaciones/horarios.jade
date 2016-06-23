@@ -1,0 +1,19 @@
+extends ../layouts/layout
+
+block content
+	section(id="container_horarios" , class="container-fluid template_content")
+		div(class="row")
+			h3 MAESTRÍAS Y DOCTORADO EN EDUCACIÓN HORARIOS DE CLASE
+
+			<br>
+
+			div(class="table-responsive")
+				table(class="table table-bordered")
+					tbody
+						tr(class="active")
+							td(style="font-weight: bold; background-color: #E1E0E0;" , colspan="4") HORARIOS POR SEMESTRE
+						tr(class="active")
+							td: a(href="{{ ruta_base }}pdfs/publicaciones/horario_2015-II.pdf" , target="_blank") 2015-II
+							td: a(href="{{ ruta_base }}pdfs/publicaciones/horario_2015-I.pdf" , target="_blank") 2015-I
+							td: a(href="{{ ruta_base }}pdfs/publicaciones/horario_2014-II.pdf" , target="_blank") 2014-II
+							td: a(href="{{ ruta_base }}pdfs/publicaciones/horario_2014-I.pdf" , target="_blank") 2014-I

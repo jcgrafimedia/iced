@@ -1,0 +1,26 @@
+extends ../layouts/layout
+block content
+	section(id="container_investigacion" , class="container-fluid template_content")
+		div(class="row")
+
+			h3 DIPLOMADOS EN INVESTIGACIÓN
+			p A continuación podrá encontrar los diplomados en Investigacon Científica que el Instituto para la Calidad de la Educación ofrece.
+
+			<br>
+
+			table(class="table table-hover table-bordered")
+				tbody
+					tr(class="active")
+						td: a(href="{{ ruta_base }}pdfs/diplomados/investigacion/diplomado_en_asesoria_de_tesis.pdf" target="_blank") Diplomado en Asesoría de Tésis
+
+					tr(class="active")
+						td: a(href="{{ ruta_base }}pdfs/diplomados/investigacion/diplomado_en_docencia_en_investigacion_cientifica.pdf" target="_blank") Diplomado en Docencia en Investigación Cientifica
+
+					tr(class="active")
+						td: a(href="{{ ruta_base }}pdfs/diplomados/investigacion/diplomado_en_estadistica_aplicada_a_la_investigacion_cientifica.pdf" target="_blank") Diplomado en Estadística Aplicada a la Investigación Científica
+
+					tr(class="active")
+						td: a(href="{{ ruta_base }}pdfs/diplomados/investigacion/diplomado_en_investigacion_cualitativa.pdf" target="_blank") Diplomado en Investigación Cualitativa
+
+					tr(class="active")
+						td: a(href="{{ ruta_base }}pdfs/diplomados/investigacion/diplomado_en_investigacion_cuantitativa.pdf" target="_blank") Diplomado en Investigación Cuantitativa

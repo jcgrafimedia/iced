@@ -1,0 +1,184 @@
+
+/* Posgrado Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+.template_content {
+	h3 {
+		text-align: center;
+		font-weight: bold;
+		margin: 130px 20px 30px 20px;
+	}
+	.sub_title {
+		color: $color_sub_title;
+		font-weight: bold;
+		font-size: 1.5rem;
+	}
+	ol {
+		margin-left: 30px;
+	}
+	ul{
+		margin-left: 30px;
+	}
+	a {
+		text-decoration: none;
+	}
+	p {
+		text-align: justify;
+	}
+	img {
+		margin: 40px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+/* Maestrias Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Maestrias/ Docencia Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+#container_docencia {
+	h3 {
+		text-align: center;
+		font-weight: bold;
+		margin: 0px 20px 15px 20px;
+	}
+	h2 {
+		text-align: center;
+		margin: 0px 20px 0px 20px;
+		font-size: 2.1rem;
+	}
+	.table_ctn {
+		width: 100%;
+		height: auto;
+		@include flex(column , center , center);
+	}
+	td {
+		text-align: center;
+	}
+}
+
+/* Maestrias/ GAA Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+   
+#container_gaa {
+	h3 {
+		text-align: center;
+		font-weight: bold;
+		margin: 0px 20px 15px 20px;
+	}
+	h2 {
+		text-align: center;
+		margin: 0px 20px 0px 20px;
+		font-size: 2.1rem;
+	}
+	.table_ctn {
+		width: 100%;
+		height: auto;
+		@include flex(column , center , center);
+	}
+	td {
+		text-align: center;
+	}
+}
+
+/* Maestrias/ Pedagogia Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+#container_pedagogia {
+	h3 {
+		text-align: center;
+		font-weight: bold;
+		margin: 0px 50px 15px 50px;
+	}
+	h2 {
+		text-align: center;
+		margin: 0px 20px 30px 20px;
+		font-size: 2.1rem;
+	}
+	.table_ctn {
+		width: 100%;
+		height: auto;
+		@include flex(column , center , center);
+	}
+	td {
+		text-align: center;
+	}
+}
+
+/* Doctorado Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+#container_doctorado {
+	h3 {
+		text-align: center;
+		font-weight: bold;
+		margin: 0px 20px 5px 20px;
+	}
+	h2 {
+		text-align: center;
+		margin: 0px 20px 0px 20px;
+		font-size: 2.1rem;
+	}
+	.table_ctn {
+		width: 100%;
+		height: auto;
+		@include flex(column , center , center);
+	}
+	td {
+		text-align: center;
+	}
+}
+
+/* Posgrado / Maestrias / Interiores / Laboratorio Styles
+   –––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#container_laboratorio {
+	h3 {
+		text-align: center;
+		font-weight: bold;
+		margin-bottom: 30px;
+	}
+	p {
+		text-align: justify;
+	}
+	.container_article {
+		div {
+			img {
+				width: 250px;
+				margin-right: 20px;
+			}
+		}
+		.text {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 550px) {
+	h3 {
+		font-size: 1.6rem;
+	}
+	.container_article {
+		@include flex(column , center , center);
+		.text {
+			margin-top: 15px;
+		}
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 552px) and (max-width: 992px) {
+	h3 {
+		font-size: 2rem;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 993px) {
+	h3 {
+		font-size: 2.2rem;
+	}
+}

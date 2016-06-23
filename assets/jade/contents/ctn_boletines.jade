@@ -1,0 +1,54 @@
+extends ../layouts/layout
+
+block content
+	section(id="container_boletin" , class="col-md-12")
+		div(class="row")
+			h3 BOLETINES
+			p A continuación podrá acceder a los boletines informativos publicados por la Oficina de Extensión y Proyección Universitraia del Instituto para la Calida de la Educación de la Universidad de San Martín de Porres.
+		div(class="row")
+			div(id="boletines" , class="col-xs-12 col-sm-4 col-sm-offset-2")
+				h5 Año 2011
+				ul
+					li
+						span(class="glyphicon glyphicon-menu-right")
+						a(href="{{ruta_base}}pdfs/boletines/boletin_01.pdf" , target="_blank") Boletín 01
+					li
+						span(class="glyphicon glyphicon-menu-right")
+						a(href="{{ruta_base}}pdfs/boletines/boletin_02.pdf" , target="_blank") Boletín 02
+				h5 Año 2012
+				ul
+					li
+						span(class="glyphicon glyphicon-menu-right")
+						a(href="{{ruta_base}}pdfs/boletines/boletin_03.pdf" , target="_blank") Boletín 03
+					li
+						span(class="glyphicon glyphicon-menu-right")
+						a(href="{{ruta_base}}pdfs/boletines/boletin_04.pdf" , target="_blank") Boletín 04
+				h5 Año 2013
+				ul
+					li
+						span(class="glyphicon glyphicon-menu-right")
+						a(href="{{ruta_base}}pdfs/boletines/boletin_05.pdf" , target="_blank") Boletín 05
+					li
+						span(class="glyphicon glyphicon-menu-right")
+						a(href="{{ruta_base}}pdfs/boletines/boletin_06.pdf" , target="_blank") Boletín 06
+				h5 Año 2014
+				ul
+					li
+						span(class="glyphicon glyphicon-menu-right")
+						a(href="{{ruta_base}}pdfs/boletines/boletin_07.pdf" , target="_blank") Boletín 07
+					li
+						span(class="glyphicon glyphicon-menu-right")
+						a(href="{{ruta_base}}pdfs/boletines/boletin_08.pdf" , target="_blank") Boletín 08
+				h5 Año 2015
+				ul
+					li
+						span(class="glyphicon glyphicon-menu-right" , style="margin: 0px 10px 0px 8px;")
+						a(href="{{ruta_base}}pdfs/boletines/boletin_09.pdf" , target="_blank" , style="text-decoration: none;") Boletín 09
+				h5 Año 2016
+				ul
+					li
+						span(class="glyphicon glyphicon-menu-right" , style="margin: 0px 10px 0px 8px;")
+						a(href="{{ruta_base}}pdfs/boletines/boletin_10.pdf" , target="_blank" , style="text-decoration: none;") Boletín 10
+
+			div(id="img_boletin" , class="col-sm-6 hidden-xs")
+				img(src="{{ruta_base}}assets/img/img_boletin.gif", alt="")

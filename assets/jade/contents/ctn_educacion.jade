@@ -1,0 +1,39 @@
+extends ../layouts/layout
+block content
+	section(id="container_educacion" , class="container-fluid template_content")
+		div(class="row")
+
+			h3 CAPACITACIÓN
+
+			<br>
+
+			table(class="table table-hover table-bordered")
+				tbody
+
+					tr(class="active")
+						td: a(href="{{ ruta_base }}pdfs/seminarios/ciclo_de_capacitacion_en_docencia_universitaria.pdf" , target="_blank") Ciclo de Capacitación en Docencia Universitaria
+
+			<br>
+
+			h3 DIPLOMADOS EN EDUCACIÓN
+			p A continuación podrá encontrar los diplomados en Educación que el Instituto para la Calidad de la Educación ofrece.
+
+			<br>
+
+			table(class="table table-hover table-bordered")
+				tbody
+
+					tr(class="active")
+						td: a(href="{{ ruta_base }}pdfs/diplomados/educacion/diplomado_de_posgrado_en_docencia_universitaria.pdf" target="_blank") Diplomado de Posgrado en Docencia Universitaria
+
+					tr(class="active")
+						td: a(href="{{ ruta_base }}pdfs/diplomados/educacion/diplomado_de_posgrado_en_didactica_de_la_matematica_en_educacion_secundaria.pdf" target="_blank") Diplomado de Posgrado en Didactica de la Matemática en Educación Secundaria
+
+					tr(class="active")
+						td: a(href="{{ ruta_base }}pdfs/diplomados/educacion/diplomado_de_posgrado_en_gestion_de_la_calidad_y_acreditacion_de_la_educacion_superior_universitaria.pdf" target="_blank") Diplomado de Posgrado en Gestión de la Calidad y Acreditación de la Educación Superior Universitaria
+
+					tr(class="active")
+						td: a(href="{{ ruta_base }}pdfs/diplomados/educacion/diplomado_de_posgrado_en_estimulacion_temprana_y_psicomotricidad.pdf" target="_blank") Diplomado de Posgrado en Estimulación Temprana y Psicomotricidad
+
+					tr(class="active")
+						td: a(href="{{ ruta_base }}pdfs/diplomados/educacion/diplomado_de_posgrado_en_metodologia_de_la_enseñanza_del_ingles.pdf" target="_blank") Diplomado de Posgrado en Metodología de la Enseñanza del Inglés

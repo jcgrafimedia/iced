@@ -1,0 +1,82 @@
+/* ===========================================
+   CSS Reset
+   =========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0 none;
+  font-size: 100%;
+  font-style: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* ===========================================
+   Imports
+   =========================================== */
+
+/* General imports
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+@import "_vars";
+@import "_mixins";
+
+/* Includes imports
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+@import "includes/_header";
+@import "includes/_slider";
+@import "includes/_aside";
+@import "includes/_prefooter";
+@import "includes/_footer";
+@import "includes/_menu_responsive";
+@import "includes/_form";
+@import "includes/_popup";
+
+/* Contents imports
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+@import "contents/_principal";
+@import "contents/_iced";
+@import "contents/_posgrado";
+@import "contents/_diplomados";
+@import "contents/_seminarios";
+@import "contents/_publicaciones";
+
+/* ===========================================
+   General Style
+   =========================================== */
+
+body {
+  background-color: $bg_body;
+}
+
+#main_container {
+  width: 100%;
+}
+
+#main_content {
+  padding-top: 50px;
+  @include flex(column, center , center);
+}
+
+#contenido {
+  width: 100%;
+  padding-top: 50px;
+  position: relative;
+  z-index: 700;
+}
+
+.table_ctn {
+    width: 100%;
+    height: auto;
+    @include flex(column , center , center);
+}
+
+td {
+  text-align: center;
+}

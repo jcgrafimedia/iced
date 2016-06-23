@@ -1,0 +1,32 @@
+extends ../layouts/layout
+block content
+	section(id="container_estructura" , class="container-fluid")
+		div(class="row")
+			h3 ORGANIZACIÓN DEL ICED
+
+			img(class="img-responsive" , src="{{ ruta_base }}assets/img/img_iced/organigrama.png", alt="")
+
+		<br>
+
+		div(class="row")
+			p A continuación se listan las autoridades del Instituto para la Calidad de la Educación:
+
+		div(class="row")
+			div(class="enlace_container")
+				div(class="enlace")
+					a(href="{{ ruta_base }}instituto/organizacion/direccion.html") Dirección
+			div(class="enlace_container")
+				div(class="enlace")
+					a(href="{{ ruta_base }}instituto/organizacion/seccion_posgrado.html") Coordinación de Postgrado
+			div(class="enlace_container")
+				div(class="enlace")
+					a(href="{{ ruta_base }}instituto/organizacion/cied.html") Centro de Investigación Educativa
+			div(class="enlace_container")
+				div(class="enlace")
+					a(href="{{ ruta_base }}construccion.html") Oficina de Grados y Títulos
+			div(class="enlace_container")
+				div(class="enlace")
+					a(href="{{ ruta_base }}instituto/organizacion/extension_universitaria.html") Oficina de Extensión y Proyección Univesitaria
+			div(class="enlace_container")
+				div(class="enlace")
+					a(href="{{ ruta_base }}instituto/organizacion/registros_academicos.html") Oficina de Registros Académicos

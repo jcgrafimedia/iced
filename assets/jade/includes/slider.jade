@@ -1,0 +1,45 @@
+
+div(id="slider" , class="hidden-xs")
+	div(class="col-md-12")
+		div(id="carousel-1" , class="carousel slide" , data-ride="carousel")
+
+			//Contenedor de slide
+
+			div(class="carousel-inner" , role="listbox")
+				
+				div(class="item active")
+					a(href="{{ ruta_base }}posgrado/maestrias/docencia_investigacion.html")
+						img(src="{{ ruta_base }}assets/img/cabeceras/banner_maestria_docencia_e_investigacion_universitaria.jpg", alt="" , class="img-responsive")
+
+				div(class="item")
+					a(href="{{ ruta_base }}posgrado/maestrias/gestion_calidad.html")
+						img(src="{{ ruta_base }}assets/img/cabeceras/banner_maestria_gestion_de_la_calidad.jpg", alt="" , class="img-responsive")
+
+				div(class="item")
+					a(href="{{ ruta_base }}posgrado/doctorado.html")
+						img(src="{{ ruta_base }}assets/img/cabeceras/banner_doctorado_educacion.jpg", alt="" , class="img-responsive")
+
+				div(class="item")
+					a(href="{{ ruta_base }}posgrado/maestrias/pedagogia_matematica.html")
+						img(src="{{ ruta_base }}assets/img/cabeceras/banner_pedagogia_de_la_matematica.jpg", alt="" , class="img-responsive")
+
+				div(class="item")
+					a(href="{{ ruta_base }}seminarios/cursos_talleres.html")
+						img(src="{{ ruta_base }}assets/img/cabeceras/banner_curso_taller.jpg", alt="" , class="img-responsive")
+
+				div(class="item")
+					a(href="{{ ruta_base }}diplomados/educacion.html")
+						img(src="{{ ruta_base }}assets/img/cabeceras/banner_diplomados_educacion.jpg", alt="" , class="img-responsive")
+
+				div(class="item")
+					a(href="{{ ruta_base }}diplomados/investigacion.html")
+						img(src="{{ ruta_base }}assets/img/cabeceras/banner_diplomados_investigacion.jpg", alt="" , class="img-responsive")
+
+			//Controles
+
+			a(href="#carousel-1" , class="left carousel-control" , role="button" , data-slide="prev")
+				span(class="glyphicon glyphicon-chevron-left" , aria-hidden="true")
+				span(class="sr-only") Anterior
+			a(href="#carousel-1" , class="right carousel-control" , role="button" , data-slide="next")
+				span(class="glyphicon glyphicon-chevron-right" , aria-hidden="true")
+				span(class="sr-only") Siguiente

@@ -1,0 +1,57 @@
+extends ../layouts/layout
+block content
+	section(id="container_normatividad" , class="container-fluid")
+		div(class="row")
+			h3 NORMATIVIDAD Y DIFUSIÓN
+
+			p En el presente espacio los visitantes podrán acceder a información de interés que el Instituto para la Calidad de la Educación comparte para conocimiento de todos los interesados.
+
+			<br>
+
+			p(class="sub_title") Directivas y reglamentos
+
+			ul(class="row")
+				li: a(href="{{ ruta_base }}pdfs/iced/normatividad/directivas/reglamento_general_2006.pdf" , download="Reglamento General") Reglamento General del Instituto para la Calidad de la Educación
+
+			p(class="sub_title") 2016 - I
+
+			ul(class="row")
+				li: a(href="{{ ruta_base }}pdfs/iced/normatividad/directivas/directivas_02_MA_2016.pdf" , download="Conservación_del_Medio_Ambiente_a_Nivel_de_Maestristas_y_Doctorados") Directiva 02: Conservación del Medio Ambiente a Nivel de Maestristas y Doctorados del ICED - USMP
+				li: a(href="{{ ruta_base }}pdfs/iced/normatividad/directivas/directivas_03_MA_2016.pdf" , download="Conservación_del_Medio_Ambiente_a_Nivel_del_Personal_Docente") Directiva 03: Conservación del Medio Ambiente a Nivel del Personal Docente del ICED - USMP
+				li: a(href="{{ ruta_base }}pdfs/iced/normatividad/directivas/directivas_04_MA_2016.pdf" , download="Conservación_del_Medio_Ambiente_a_Nivel_de_Personal_Administrativo") Directiva 04: Conservación del Medio Ambiente a Nivel de Personal Administrativo del ICED - USMP
+
+			p(class="sub_title") 2015 - II
+
+			ul(class="row")
+				li: a(href="{{ ruta_base }}pdfs/iced/normatividad/directivas/directiva_01_practicas_permanentes_de_ecoeficiencia_ambiental_estudiantes.pdf" , download="Directiva 01 - Prácticas Permanentes de Ecoeficiencia Ambiental - Estudiantes") Directiva 01: Norma para las práctica permanentes de ecoeficiencia ambiental de los alumnos del ICED-USMP.
+				li: a(href="{{ ruta_base }}pdfs/iced/normatividad/directivas/directiva_02_practicas_permanentes_de_ecoeficiencia_ambiental_administrativos.pdf" , download="Directiva 02 - Prácticas Permanentes de Ecoeficiencia Ambiental - Administrativos") Directiva 02: Norma para las prácticas permanentes de ecoeficiencia ambiental del personal administrativo del ICED-USMP.
+				li: a(href="{{ ruta_base }}pdfs/iced/normatividad/directivas/directiva_03_practicas_permanentes_de_ecoeficiencia_ambiental_docentes.pdf" , download="Directiva 03 - Prácticas Permanentes de Ecoeficiencia Ambiental - Docentes") Directiva 03: Norma para las prácticas permanentes de ecoeficiencia ambiental del personal docente del ICED-USMP.
+				li: a(href="{{ ruta_base }}pdfs/iced/normatividad/directivas/directiva_04_norma_para_el_tratamiento_de_la_desigualdad_de_mujeres_y_hombres.pdf" , download="Directiva 04 - Norma para el Tratamiento de la Desigualdad de Mujeres y Hombres en el ICED-USMP") Directiva 04: Norma para el tratamiento de la desigualdad de mujeres y hombres en el ICED-USMP.
+			
+			<br>
+
+			p(class="sub_title") Encuestas
+
+			ul(class="row")
+				li: a(href="{{ ruta_base }}pdfs/iced/normatividad/encuestas/cuestionario_equidad_genero_estudiantes.docx" , download="Cuestionario de Equidad de Género - Estudiantes") Encuesta de sensibilización sobre equidad de género - estudiantes.
+				li: a(href="{{ ruta_base }}pdfs/iced/normatividad/encuestas/cuestionario_equidad_genero_docentes.docx" , download="Cuestionario de Equidad de Género - Docentes") Encuesta de sensibilización sobre equidad de género - docentes.
+				li: a(href="{{ ruta_base }}pdfs/iced/normatividad/encuestas/cuestionario_equidad_genero_administrativos.docx" , download="Cuestionario de Equidad de Género - Administrativos") Encuestade sensibilización sobre equidad de género - administrativos.
+
+			<br>
+
+			p(class="sub_title") Difusión
+
+			ul(class="row")
+				li: a(href="{{ ruta_base }}pdfs/iced/normatividad/difusion/D05-07-resultados_academicos.pdf" , download="D05-07-Resultados_Academicos") Resultados académicos generales.
+				li: a(href="{{ ruta_base }}pdfs/iced/normatividad/difusion/resultados.pdf" , download="Resultados") Resultados de encuestas de opinión.
+				li: a(href="#") Resultados de encuestas de evaluación docente.
+				li: a(href="#modal_madre") Saludos por el Día de la Madre.
+				li: a(href="#modal_padre") Saludos por el Día del Padre.
+
+			div(class="remodal" data-remodal-id="modal_madre")
+				button(data-remodal-action="close" class="remodal-close")
+				img(src="{{ ruta_base }}assets/img/img_iced/saludos_dia_de_la_madre.png", alt="" , width="100%")
+
+			div(class="remodal" data-remodal-id="modal_padre")
+				button(data-remodal-action="close" class="remodal-close")
+				img(src="{{ ruta_base }}assets/img/img_iced/saludos_dia_del_padre.png", alt="" , width="100%")

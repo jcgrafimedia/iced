@@ -1,0 +1,64 @@
+extends ../layouts/layout
+block content
+	section(id="container_infraestructura" , class="container-fluid")
+		div(class="row")
+			h3 INFRAESTRUCTURA
+
+		div(class="row")
+			div(role="tabpanel")
+				ul(class="nav nav-tabs" , role="tablist")
+					li(role="presentation" , class="active")
+						a(href="#seccion1" , aria-controls="" , data-toggle="tab" , role="tab") Aulas de clase
+					li(role="presentation")
+						a(href="#seccion2" , aria-controls="" , data-toggle="tab" , role="tab") Laboratorios de cómputo
+					li(role="presentation")
+						a(href="#seccion3" , aria-controls="" , data-toggle="tab" , role="tab") Biblioteca y salas de estudio
+
+			div(class="tab-content")
+				div(role="tabpanel" , class="tab-pane active" , id="seccion1")
+
+					p(class="sub_title") Aulas de Clase
+
+					p El Instituto para la Calidad de la Educación cuenta con aulas equipadas con computadoras multimedia equipadas con audio, proyectores y reproductores de  DVD para el dictado de clase de los cursos de Maestría y Doctorado que ofrece a sus alumnos. Todas las aulas tienen acceso al servicio de internet inalámbrico brindado por el Instituto para la Calidad de la Educación.
+					
+					<br>
+
+					div(class="content_img")
+						img(class="img-responsive" , src="{{ ruta_base }}assets/img/img_iced/infraestructura/aulas_1.jpg", alt="")
+						img(class="img-responsive" , src="{{ ruta_base }}assets/img/img_iced/infraestructura/aulas_2.jpg", alt="")
+
+					div(class="content_img")
+						img(class="img-responsive" , src="{{ ruta_base }}assets/img/img_iced/infraestructura/aulas_3.jpg", alt="")
+						img(class="img-responsive" , src="{{ ruta_base }}assets/img/img_iced/infraestructura/aulas_4.jpg", alt="")
+				
+				div(role="tabpanel" , class="tab-pane" , id="seccion2")
+
+					p(class="sub_title") Laboratorios de cómputo
+
+					p El Instituto para la Calidad de la Educación cuenta con laboratorios de cómputo equipados con computadoras de última generación que para el dictado de clase de clases. Cada laboratorio cuenta con acceso al servicio de Internet fijo e inalámbrico proveído por el Instituto para la Calidad de la Educación.  Asimismo, es posible la reserva de laboratorios para el desarrollo de trabajos y proyectos durante días de semana, previa coordinación con la Oficina de Registros Académicos.
+
+					<br>
+
+					div(class="content_img")
+						img(class="img-responsive" , src="{{ ruta_base }}assets/img/img_iced/infraestructura/laboratorio_1.jpg", alt="")
+						img(class="img-responsive" , src="{{ ruta_base }}assets/img/img_iced/infraestructura/laboratorio_2.jpg", alt="")
+
+					div(class="content_img")
+						img(class="img-responsive" , src="{{ ruta_base }}assets/img/img_iced/infraestructura/laboratorio_3.jpg", alt="")
+						img(class="img-responsive" , src="{{ ruta_base }}assets/img/img_iced/infraestructura/laboratorio_4.jpg", alt="")
+
+				div(role="tabpanel" , class="tab-pane" , id="seccion3")
+				
+					p(class="sub_title") Biblioteca y salas de estudio
+
+					p Nuestros estudiantes tienen acceso directo a la Biblioteca Central de la Universidad de San Martín de Porres. La Bibliotece Central cuenta con una amplia colección actualizada de libros que abrcan todas las áreas temáticas exstentes. Del mismo modo, la Biblioteca Central pone a disposición de los interesados las Investigaciones realizadas por nuestros egresados y los de otras facultades de la USMP. Asimismo, cuenta con salas de estudio individuales y grupales para uso de nuestros estudiantes.
+					
+					<br>
+					
+					div(class="content_img")
+						img(class="img-responsive" , src="{{ ruta_base }}assets/img/img_iced/infraestructura/biblioteca_1.jpg", alt="")
+						img(class="img-responsive" , src="{{ ruta_base }}assets/img/img_iced/infraestructura/biblioteca_2.jpg", alt="")
+
+					div(class="content_img")
+						img(class="img-responsive" , src="{{ ruta_base }}assets/img/img_iced/infraestructura/biblioteca_3.jpg", alt="")
+						img(class="img-responsive" , src="{{ ruta_base }}assets/img/img_iced/infraestructura/biblioteca_4.jpg", alt="")

@@ -1,0 +1,48 @@
+
+/* Boletines Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+#container_boletin {
+	h3 {
+		font-size: 3rem;
+		text-align: center;
+		font-weight: bold;
+	}
+	p {
+		margin: 20px 0px 20px 0px;
+	}
+	#boletines {
+		h5 {
+			color: rgb(178, 34, 34);
+			font-weight: bold;
+		}
+		span {
+			margin: 0px 10px 0px 8px;
+		}
+		a {
+			text-decoration: none;
+		}
+		li {
+			list-style: none;
+		}
+	}
+
+	#img_boletin {
+		width: 50%;
+		margin-top: 70px;
+	}
+}
+
+
+/* Orientación Académica Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+#container_orientacion {
+	li {
+		text-align: left;
+	}
+	td {
+		@include flex(column, center , center);
+	}
+}
+

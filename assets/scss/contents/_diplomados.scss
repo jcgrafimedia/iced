@@ -1,0 +1,73 @@
+
+/* Diplomados Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+.template_content {
+	h3 {
+		text-align: center;
+		font-weight: bold;
+		margin: 0px 20px 30px 20px;
+	}
+	.sub_title {
+		color: $color_sub_title;
+		font-weight: bold;
+		font-size: 1.5rem;
+	}
+	ol {
+		margin-left: 30px;
+	}
+	ul{
+		margin-left: 30px;
+	}
+	a {
+		text-decoration: none;
+	}
+	p {
+		text-align: justify;
+	}
+	img {
+		margin: 40px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	td {
+		text-align: center;
+	}
+}
+
+.enlace_container {
+	width: 100%;
+	height: auto;
+	background-color: $bglink_container;
+	border-radius: 8px 0px 0px 8px;
+	border: 1px solid #DADADA;
+	margin: 20px 0px 20px 0px;
+	@include flex(row, flex-end , null);
+	.enlace {
+		width: 99%;
+		height: 38px;
+		background-color: $bg_body;
+		border-radius: 8px 0px 0px 8px;
+		@include flex(row, flex-start , center);
+		a {
+			margin-left: 20px;
+			text-decoration: none;
+		}
+	}
+}
+
+.lista {
+	text-align: left;
+	li {
+		margin-bottom: 10px;
+	}
+}
+
+.fechas {
+	width: 20%;
+}
+
+/* Diplomados / Investigacion Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+

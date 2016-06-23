@@ -1,0 +1,50 @@
+
+.form {
+  width: 100%;
+  height: auto;
+  iframe {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+	.form {
+	  #inscripcion {
+	    height: 2300;
+	  }
+		#reclamaciones {
+	    	height: 1650;
+	  	}
+		#sugerencias {
+	    	height: 1550;
+	  	}
+	}
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+	.form {
+	  #inscripcion {
+	    height: 2200;
+	  }
+		#reclamaciones {
+	    	height: 1350;
+	  	}
+		#sugerencias {
+	    	height: 1300;
+	  	}
+	}
+}
+
+@media (min-width: 993px) {
+	.form {
+		#inscripcion {
+			height: 2120;
+		}
+		#reclamaciones {
+	    	height: 1350;
+	  	}
+		#sugerencias {
+	    	height: 1300;
+	  	}
+	}
+}

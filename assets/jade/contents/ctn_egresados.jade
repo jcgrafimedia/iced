@@ -1,0 +1,37 @@
+extends ../layouts/layout
+block content
+	section(id="container_egresados" , class="container-fluid")
+		div(class="row")
+			h3 CÍRCULO DE EGRESADOS DEL INSTITUTO PARA LA CALIDAD DE LA EDUCACIÓN
+			img(class="img-responsive" , src="{{ ruta_base }}assets/img/img_iced/egresados.jpg", alt="")
+
+			p El “Círculo de Egresados” del Instituto para la Calidad de la Educación (ICED) de la Universidad de San Martín de Porres (USMP) es el resultado de una iniciativa conjunta de los alumnos egresados del Instituto con nuestra institución, ante la necesidad de establecer vínculos académicos y profesionales permanentes, en la búsqueda compartida de la mejora continua relacionada con la calidad y la excelencia educativa.
+
+			<br>
+
+			p El “Círculo de Egresados” del ICED - USMP es una organización académica sin fines de lucro que tiene como misión contribuir al desarrollo y perfeccionamiento académico y profesional de sus miembros, compartiendo conocimientos, experiencias y fomentando la participación activa y responsable con la Universidad y la sociedad.
+
+			<br>
+
+			p El día sábado 23 de agosto del año 2014, convocados por la Dirección del Instituto para la Calidad de la Educación, se realizó la renovación de la Junta Directiva para el período 2014 - 2015, mediante una ceremonia en la wue se realizó la elección democrática de la nueva Junta Directiva, resultando elegidos como flamantes miembros los siguientes egresados:
+
+			ul(class="row")
+				li Presidenta: Ma. Carmen Rosa Calero Moscol
+				li Vicepresidente: Mg. Alejandrina Soto De La Cruz
+				li Secretaria: Ma. Lourdes Olivera Chávez
+				li Tesorero: Mo. Manuel Aurelio Pastor Mendoza
+				li Vocales:
+				ul(type="circle" , style="margin: 10px 0px 10px 30px;")
+					li Lic. Joél Pomalaza Puga
+					li Ma. Alejandro Sánchez Vásquez
+
+		div(class="row")
+			//div(class="enlace_container")
+				div(class="enlace")
+					a(href="#") I Seminario: Formas Diferentes de Aprender, Formas Diferentes de Enseñar
+			//div(class="enlace_container")
+				div(class="enlace")
+					a(href="{{ ruta_base }}pdfs/inscripcion_circulo_de_egresados.docx" , download="inscripcion_circulo_de_egresados") Inscripción al Círculo de Egresados
+			div(class="enlace_container")
+				div(class="enlace")
+					a(href="{{ ruta_base }}instituto/egresados/egresados_2013.html") Círculo de egresados 2013

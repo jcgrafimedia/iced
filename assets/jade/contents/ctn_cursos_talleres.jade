@@ -1,0 +1,19 @@
+extends ../layouts/layout
+block content
+	section(id="container_cursos" , class="container-fluid template_content")
+		div(class="row")
+
+			h3 SEMINARIOS Y CURSOS TALLER
+
+			p(class="sub_title") 2016
+
+			<br>
+
+			table(class="table table-hover table-bordered")
+				tbody
+
+					tr(class="active")
+						td: a(href="{{ ruta_base }}pdfs/seminarios/curso_taller_de_investigacion_accion.pdf" , target="_blank") Taller de  Investigación Acción
+
+					tr(class="active")
+						td: a(href="{{ ruta_base }}pdfs/seminarios/curso_taller_de_asesoria_de_tesis_para_optar_el_grado_academico_de_maestro_o_doctor_en_educacion.pdf" , target="_blank") Taller de Asesoría de Tésis para Optar el Grado Académico de Maestro o Doctor en Educación

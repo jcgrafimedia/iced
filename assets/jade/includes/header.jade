@@ -1,0 +1,86 @@
+header
+	div(id="container_header")
+		div(id="container_logo")
+			a(href="{{ ruta_base }}")
+				img(src="{{ ruta_base }}assets/img/logo_iced.png", alt="")
+
+		div(id="menu_small" , class="hidden-md hidden-lg")
+			button(id="btn_menu" , class="glyphicon glyphicon-menu-hamburger" href="#nav_small")
+
+		div(id="container_menu" , class="hidden-xs hidden-sm")
+			nav
+				ul
+					li
+						div(id="esp_1" , class="espaciado")
+						a(id="inicio" , href="{{ ruta_base }}" , class="top-to-bottom") INICIO
+					li
+						div(id="esp_2" , class="espaciado")
+						a(id="iced" , href="" , class="top-to-bottom")
+							span EL ICED
+							i(class="glyphicon glyphicon-chevron-down")
+						ul(id="sub_iced" , class="hidden")
+							li: a(href="{{ ruta_base }}instituto/instituto.html") El Instituto
+							div(class="divisor")
+
+							li: a(href="{{ ruta_base }}instituto/acreditaciones.html") Acreditaciones
+							div(class="divisor")
+
+							li: a(href="{{ ruta_base }}instituto/organizacion.html") Estructura orgánica
+							div(class="divisor")
+
+							li
+								a(id="investigaciones" , href="") Investigaciones
+									span(class="glyphicon glyphicon-chevron-right")
+								ul(id="sub_investigaciones" , class="hidden")
+									li: a(href="{{ ruta_base }}instituto/investigaciones/tesis.html") Tesis de Maestria y Doctorado
+									div(class="divisor")
+									li: a(href="{{ ruta_base }}pdfs/cuidado_y_conservacion_del_medio_ambiente_2016.pdf" , download="Cuidado y Conservacion del Medio Ambiente - 2016") Proyecto
+							div(class="divisor")
+					
+							li: a(href="{{ ruta_base }}instituto/infraestructura.html") Infraestructura
+							div(class="divisor")
+
+							li
+								a(id="egresados" , href="") Egresados y graduados
+									span(class="glyphicon glyphicon-chevron-right")
+								ul(id="sub_egresados" , class="hidden")
+									li: a(href="{{ ruta_base }}instituto/egresados/asociacion_graduados.html") Asociación de graduados
+									div(class="divisor")
+									li: a(href="{{ ruta_base }}instituto/egresados/circulo_egresados.html") Circulo de egresados
+									div(class="divisor")
+									li: a(href="{{ ruta_base }}instituto/egresados/bolsa_trabajo.html") Bolsa de trabajo
+							div(class="divisor")
+
+							li: a(href="{{ ruta_base }}instituto/normatividad_difusion.html") Normatividad y difusión
+					li
+						div(id="esp_3" , class="espaciado")
+						a(id="posgrado" , href="") 
+							span PROGRAMAS DE POSGRADO
+							i(class="glyphicon glyphicon-chevron-down")
+						ul(id="sub_pos" , class="hidden")
+							li: a(href="{{ ruta_base }}posgrado/maestrias.html") Maestrías
+							div(class="divisor")
+
+							li: a(href="{{ ruta_base }}posgrado/doctorado.html") Doctorado
+
+					li
+						div(id="esp_4" , class="espaciado")
+						a(id="diplomados" , href="" , class="top-to-bottom")
+							span DIPLOMADOS
+							i(class="glyphicon glyphicon-chevron-down")
+						ul(id="sub_diplomados" , class="hidden")
+							li: a(href="{{ ruta_base }}diplomados/educacion.html") En Educación
+							div(class="divisor")
+							li: a(href="{{ ruta_base }}diplomados/investigacion.html") En Investigación
+					li
+						div(id="esp_5" , class="espaciado")
+						a(id="seminarios" , href="{{ ruta_base }}seminarios/cursos_talleres.html" )
+							span SEMINARIOS Y CURSOS TALLER
+					li
+						div(id="esp_6" , class="espaciado")
+						a(id="publicaciones" , href="#" , class="top-to-bottom") 
+							span PUBLICACIONES
+							i(class="glyphicon glyphicon-chevron-down")
+						ul(id="sub_publicaciones" , class="hidden")
+							li
+								a(href="{{ruta_base}}publicaciones/boletines.html") Boletines

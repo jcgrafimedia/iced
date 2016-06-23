@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="icedusmp">
+  <head ng-controller="route">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Instituto para la calidad de la educacion">
+    <meta name="keywords" content="iced, iced usmp , instituto para la caldidad">
+    <meta name="author" content="ICED">
+    <link rel="shortcut icon" href="http://www.usmp.edu.pe/iced/assets/img/logo_usmp.ico">
+    <link rel="stylesheet" href="http://www.usmp.edu.pe/iced/assets/lib/css/normalize.min.css">
+    <link rel="stylesheet" href="http://www.usmp.edu.pe/iced/assets/lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://www.usmp.edu.pe/iced/assets/css/styles.css">
+    <link rel="stylesheet" href="http://www.usmp.edu.pe/iced/assets/lib/css/remodal.css">
+    <link rel="stylesheet" href="http://www.usmp.edu.pe/iced/assets/lib/css/remodal-default-theme.css">
+    <link rel="stylesheet" href="http://www.usmp.edu.pe/iced/assets/lib/css/slicknav.min.css">
+    <link rel="stylesheet" href="http://www.usmp.edu.pe/iced/assets/lib/css/slidebars.css">
+    <!--link(rel="stylesheet" , href="http://www.usmp.edu.pe/iced/assets/lib/css/component.css")-->
+    <title>ICED</title>
+  </head>
+  <body ng-controller="route">
+    <div id="main_container">
+      <header>
+        <div id="container_header">
+          <div id="container_logo"><a href="{{ ruta_base }}"><img src="{{ ruta_base }}assets/img/logo_iced.png" alt=""></a></div>
+          <div id="menu_small" class="hidden-md hidden-lg">
+            <button id="btn_menu" href="#nav_small" class="glyphicon glyphicon-menu-hamburger"></button>
+          </div>
+          <div id="container_menu" class="hidden-xs hidden-sm">
+            <nav>
+              <ul>
+                <li>
+                  <div id="esp_1" class="espaciado"></div><a id="inicio" href="{{ ruta_base }}" class="top-to-bottom">INICIO</a>
+                </li>
+                <li>
+                  <div id="esp_2" class="espaciado"></div><a id="iced" href="" class="top-to-bottom"><span>EL ICED</span><i class="glyphicon glyphicon-chevron-down"></i></a>
+                  <ul id="sub_iced" class="hidden">
+                    <li><a href="{{ ruta_base }}instituto/instituto.html">El Instituto</a></li>
+                    <div class="divisor"></div>
+                    <li><a href="{{ ruta_base }}instituto/acreditaciones.html">Acreditaciones</a></li>
+                    <div class="divisor"></div>
+                    <li><a href="{{ ruta_base }}instituto/organizacion.html">Estructura orgánica</a></li>
+                    <div class="divisor"></div>
+                    <li><a id="investigaciones" href="">Investigaciones<span class="glyphicon glyphicon-chevron-right"></span></a>
+                      <ul id="sub_investigaciones" class="hidden">
+                        <li><a href="{{ ruta_base }}instituto/investigaciones/tesis.html">Tesis de Maestria y Doctorado</a></li>
+                        <div class="divisor"></div>
+                        <li><a href="{{ ruta_base }}pdfs/cuidado_y_conservacion_del_medio_ambiente_2016.pdf" download="Cuidado y Conservacion del Medio Ambiente - 2016">Proyecto</a></li>
+                      </ul>
+                    </li>
+                    <div class="divisor"></div>
+                    <li><a href="{{ ruta_base }}instituto/infraestructura.html">Infraestructura</a></li>
+                    <div class="divisor"></div>
+                    <li><a id="egresados" href="">Egresados y graduados<span class="glyphicon glyphicon-chevron-right"></span></a>
+                      <ul id="sub_egresados" class="hidden">
+                        <li><a href="{{ ruta_base }}instituto/egresados/asociacion_graduados.html">Asociación de graduados</a></li>
+                        <div class="divisor"></div>
+                        <li><a href="{{ ruta_base }}instituto/egresados/circulo_egresados.html">Circulo de egresados</a></li>
+                        <div class="divisor"></div>
+                        <li><a href="{{ ruta_base }}instituto/egresados/bolsa_trabajo.html">Bolsa de trabajo</a></li>
+                      </ul>
+                    </li>
+                    <div class="divisor"></div>
+                    <li><a href="{{ ruta_base }}instituto/normatividad_difusion.html">Normatividad y difusión</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div id="esp_3" class="espaciado"></div><a id="posgrado" href=""> <span>PROGRAMAS DE POSGRADO</span><i class="glyphicon glyphicon-chevron-down"></i></a>
+                  <ul id="sub_pos" class="hidden">
+                    <li><a href="{{ ruta_base }}posgrado/maestrias.html">Maestrías</a></li>
+                    <div class="divisor"></div>
+                    <li><a href="{{ ruta_base }}posgrado/doctorado.html">Doctorado</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div id="esp_4" class="espaciado"></div><a id="diplomados" href="" class="top-to-bottom"><span>DIPLOMADOS</span><i class="glyphicon glyphicon-chevron-down"></i></a>
+                  <ul id="sub_diplomados" class="hidden">
+                    <li><a href="{{ ruta_base }}diplomados/educacion.html">En Educación</a></li>
+                    <div class="divisor"></div>
+                    <li><a href="{{ ruta_base }}diplomados/investigacion.html">En Investigación</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div id="esp_5" class="espaciado"></div><a id="seminarios" href="{{ ruta_base }}seminarios/cursos_talleres.html"><span>SEMINARIOS Y CURSOS TALLER</span></a>
+                </li>
+                <li>
+                  <div id="esp_6" class="espaciado"></div><a id="publicaciones" href="#" class="top-to-bottom"> <span>PUBLICACIONES</span><i class="glyphicon glyphicon-chevron-down"></i></a>
+                  <ul id="sub_publicaciones" class="hidden">
+                    <li><a href="{{ruta_base}}publicaciones/boletines.html">Boletines</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!--Menu Responsive
+      -->
+      <div id="nav_small">
+        <nav id="nav_mobile"><a href="{{ ruta_base }}"><span class="glyphicon glyphicon-home icon_menu"></span><span>INICIO</span></a>
+          <!--
+          div(class="sub_menu")
+          	a(href="") El instituto
+          -->
+          <div class="divider"></div><a href=""><span class="glyphicon glyphicon-flag icon_menu"></span><span>ICED</span></a>
+          <div class="divider"></div><a href=""><span class="glyphicon glyphicon-education icon_menu"></span><span>POSGRADO</span></a>
+          <div class="divider"></div><a href=""><span class="glyphicon glyphicon-briefcase icon_menu"></span><span>DIPLOMADOS</span></a>
+          <div class="divider"></div><a href="{{ ruta_base }}seminarios/cursos_talleres.html"><span class="glyphicon glyphicon-edit icon_menu"></span><span>SEMINARIOS</span></a>
+          <div class="divider"></div><a href=""><span class="glyphicon glyphicon-bullhorn icon_menu"></span><span>PUBLICACIONES</span></a>
+        </nav>
+      </div>
+      <div id="main_content" class="container">
+        <div id="contenido">
+          <div class="col-md-8">
+            <section id="container_instituto" class="col-md-12">
+              <div class="row">
+                <h3>INSTITUTO PARA LA CALIDAD DE LA EDUCACIÓN DE LA UNIVERSIDAD DE SAN MARTÍN DE PORRES</h3>
+                <div class="container_article">
+                  <div class="col-sm-12"><img src="{{ ruta_base }}assets/img/img_iced/iced.png" alt="" class="img-responsive"></div>
+                  <!--div(class="text")
+                  h4 Invitación abierta a todos los grupos de interés
+                  p El Instituto para la Calidad de la Educación invita a todos los directivos, administrativos, docentes, estudiantes, egresados, graduados y representantes de la sociedad civil a la reunión de socialización a realizarse el día sábado 05 de diciembre de 2015, en el que se expondrásn los resultados del desarrollo del plan de mejoras durante el año 2015.
+                  -->
+                </div><br>
+                <article>
+                  <div>
+                    <h4>Misión de la Universidad de San Martín de Porres</h4>
+                    <p>“Nos dedicamos a la formación de profesionales competitivos con sólidos valores humanísticos, éticos y morales. Contribuimos a la promoción, desarrollo y difusión de la ciencia, la tecnología y la cultura. Proyectamos nuestra acción a la comunidad, propiciando la construcción de una sociedad moderna, justa y equitativa”.</p><br>
+                    <h4>Misión del Instituto de la Calidad de la Educación</h4>
+                    <p>“Calificar profesionales competentes, con sólido valores humanísticos éticos y cívicos. Contribuir a la creación de conocimientos a través de la investigación y promover la difusión de la ciencia, la tecnología y la cultura. Proyectar nuestra acción a la comunidad, propiciando la construcción de una sociedad moderna y equitativa”.</p><br>
+                    <h4>Visión del Instituto de la Calidad de la Educación</h4>
+                    <p>“Alcanzar la excelencia académica al más alto nivel en la calificación profesional a través de las maestrías y doctorado en Educación; reafirmando la imagen de alta credibilidad institucional y liderazgo, para el mejoramiento continuo de la calidad académica, alto sentido de la responsabilidad y sensibilidad social y su compromiso con la sociedad peruana”.</p><br>
+                    <h4>Cultura Institucional</h4>
+                    <ul class="col-xs-offset-1">
+                      <li>Respeto a la persona.</li>
+                      <li>Búsqueda de la verdad.</li>
+                      <li>Integridad (honestidad, equidad, justicia, solidaridad y vocación de servicio).</li>
+                      <li>Búsqueda de la excelencia.</li>
+                      <li>Liderazgo (académico, tecnológico y otros).</li>
+                      <li>Actitud innovadora y emprendedora.</li>
+                      <li>Conservación ambiental.</li>
+                      <li>Trabajo en equipo.</li>
+                      <li>Comunicación efectiva</li>
+                      <li>Compromiso con el desarrollo del país.</li>
+                    </ul>
+                  </div><br>
+                  <div class="descargas"><span style="margin-right: 8px;" class="glyphicon glyphicon-paperclip"></span><a href="{{ ruta_base }}pdfs/iced/plan_estrategico_2013-2017.pdf" target="_blank" style="text-decoration: none;">Plan estratégico 2013-2017</a></div><br>
+                  <div class="descargas"><span style="margin-right: 8px;" class="glyphicon glyphicon-paperclip"></span><a href="{{ ruta_base }}pdfs/iced/politicas_y_objetivos_de_calidad.pdf" target="_blank" style="text-decoration: none;">Políticas y objetivos de calidad</a></div><br>
+                </article>
+              </div>
+            </section>
+          </div>
+          <div class="col-md-4">
+            <aside class="hidden-xs hidden-sm">
+              <div id="enlaces">
+                <div class="content_link col-sm-12">
+                  <div class="cabecera">
+                    <div><span class="glyphicon glyphicon-link"></span></div>
+                    <h3>Enlaces importantes</h3>
+                  </div>
+                  <h4>Maestrías y Doctorado en Educación</h4><a href="{{ ruta_base }}posgrado/maestrias.html">- Maestrías en educación</a><a href="{{ ruta_base }}posgrado/doctorado.html">- Doctorado en educación</a><a href="{{ ruta_base }}pdfs/requisitos_de_admision_para_la_maestria_y_doctorado_en_educacion.pdf" target="_blank">- Requisitos de admisión 2016-II</a><a href="{{ ruta_base }}pdfs/cronograma_de_admision_2016-II.pdf" target="_blank">- Cronograma de admisión 2016-II</a><a href="{{ ruta_base }}publicaciones/comisiones_admision.html">- Comisión de admisión</a><a href="{{ ruta_base }}formularios/inscripcion_2016.html" target="_blank">- Inscripción al proceso de admisión 2016-II</a><a href="{{ ruta_base }}publicaciones/horarios.html">- Horarios de clase</a><a href="{{ ruta_base }}publicaciones/orientacion_academica.html">- Orientación académica al estudiante</a>
+                  <h4>Diplomados</h4><a href="{{ ruta_base }}diplomados/educacion.html">- Diplomados en educación</a><a href="{{ ruta_base }}formularios/inscripcion_educacion_2016.html" target="_blank">- Inscripción a Diplomados en Educación 2016-II</a><a href="{{ ruta_base }}diplomados/investigacion.html">- Diplomados en investigación</a><a href="{{ ruta_base }}formularios/inscripcion_investigacion_2016.html" target="_blank">- Inscripción a Diplomados en Investigación 2016-II</a>
+                  <h4>Seminarios y Cursos – Taller</h4><a href="{{ ruta_base }}seminarios/cursos_talleres.html">- Cursos – Taller</a><a href="{{ ruta_base }}formularios/inscripcion_seminario_2016.html" target="_blank">- Inscripción a Seminarios y Cursos - Taller 2016-II</a>
+                  <h4>Procesos administrativos</h4><a href="{{ ruta_base }}pdfs/guia_tramite.pdf" target="_blank">- Guía de trámite documentario</a>
+                  <h4>Bolsa de trabajo</h4><a href="http://icedusmp.trabajando.pe/" target="_blank">- Portal de bolsa</a>
+                </div>
+              </div>
+              <div id="servicios">
+                <div class="content_link col-md-12">
+                  <div class="cabecera">
+                    <div><span class="glyphicon glyphicon-wrench"></span></div>
+                    <h3>Servicios</h3>
+                  </div><a href="http://icedusmp.com/moodle/login/index.php" target="_blank">- Aula virtual</a><a href="http://www.sibus.usmp.edu.pe/" target="_blank">- Biblioteca central</a><a href="{{ ruta_base }}construccion.html">- Intranet académica</a><a href="{{ ruta_base }}posgrado/maestrias//interiores/laboratorio.html">- Laboratorio</a><a href="{{ ruta_base }}formularios/reclamaciones.html" target=":blank">- Quejas y reclamaciones</a><a href="{{ ruta_base }}formularios/sugerencias.html" target=":blank">- Sugerencias</a>
+                </div>
+              </div>
+            </aside>
+            <!--
+            div(id="infraestructura")
+            	div(class="content_link col-md-12")
+            		div(class="cabecera")
+            			div
+            				span(class="glyphicon glyphicon-home")
+            			h3 Infraestructura
+            -->
+          </div>
+        </div>
+      </div>
+      <div id="prefooter">
+        <div class="container">
+          <div class="col-md-4">
+            <div class="content_link col-sm-12">
+              <div class="cabecera">
+                <div><span class="glyphicon glyphicon-earphone"></span></div>
+                <h3>Contactos e Informes</h3>
+              </div><span>Ciudad Universitaria de la USMP, sito en Jr. Las</span><span>Calandrias 151-291, Santa Anita.</span><span>Teléfonos: 362-0064. Anexos 3159-3160-3161-3163-3164-3202</span><span>Correo electrónico: <a href="">educacion@usmp.pe</a></span><span>Página web: <a href="http://www.usmp.edu.pe/iced">www.usmp.edu.pe/iced</a></span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="content_link col-sm-12">
+              <div class="cabecera">
+                <div><span class="glyphicon glyphicon-hourglass"></span></div>
+                <h3>Horarios de Atención</h3>
+              </div><span>De lunes a viernes de 08:00 am a 10:00 pm. Sábado de 08:00 am a 04:45 pm.</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="content_link col-sm-12">
+              <div class="cabecera">
+                <div><span class="glyphicon glyphicon-globe"></span></div>
+                <h3>Localización</h3>
+              </div>
+              <div id="map">
+                <div id="container_map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.9780238224316!2d-76.96893008503716!3d-12.045032945148145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c67c8a999ed7%3A0x45adfccc30492803!2sUSMP+-+Facultad+de+Administracion+de+Negocios+Internacionales!5e0!3m2!1ses!2spe!4v1460127356624" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container-fluid">
+          <div id="footer" class="row">
+            <div class="container">
+              <div id="icedusmp">ICED - 2016</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="http://www.usmp.edu.pe/iced/assets/lib/js/jquery.min.js"></script>
+    <script src="http://www.usmp.edu.pe/iced/assets/lib/js/bootstrap.min.js"></script>
+    <script src="http://www.usmp.edu.pe/iced/assets/lib/js/angular.min.js"></script>
+    <script src="http://www.usmp.edu.pe/iced/assets/lib/js/remodal.min.js"></script>
+    <script src="http://www.usmp.edu.pe/iced/assets/lib/js/slicknav.min.js"></script>
+    <script src="http://www.usmp.edu.pe/iced/assets/lib/js/slidebars.js"></script>
+    <script src="http://www.usmp.edu.pe/iced/assets/lib/js/responsive-nav.min.js"></script>
+    <!--script(src="http://www.usmp.edu.pe/iced/assets/lib/js/classie.js")-->
+    <!--script(src="http://www.usmp.edu.pe/iced/assets/lib/js/modalEffects.js")-->
+    <script src="http://www.usmp.edu.pe/iced/assets/js/main.js"></script>
+    <script src="http://www.usmp.edu.pe/iced/assets/js/main_angular.js"></script>
+  </body>
+</html>
