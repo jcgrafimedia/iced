@@ -1,0 +1,15 @@
+extends ../layouts/layout
+block content
+	section(id="container_noticias" , class="container-fluid")
+		div(class="row")
+			h3 NOTICIAS
+			article
+				a(href="{{ ruta_base }}noticias/articulo_1.html" , class="title") Movilidad Académica a España
+				
+				div(class="container_article")
+					div
+						img(src="{{ ruta_base }}assets/img/articulo_principal/articulo_1.png", alt="")
+					div(class="text")
+						h4 Seminario Internacional: Formación de Especialistas en Autoevaluación y Acreditación Universitaria
+						p Una delegación de docentes y graduados del Instituto para la Calidad de la Solución ICED-USMP participarán en el Seminario Internacional: Formación de Especialistas en Autoevaluación y Acreditación Universitaria que se realizará del 20 al 24 de setiembre del presente año en Santiago de Compostela - España.
+				a(class="btn btn-primary col-sm-offset-10" , href="{{ ruta_base }}noticias/articulo_1.html") Leer más...

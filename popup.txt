@@ -1,0 +1,14 @@
+<script type="text/javascript">
+      function popup(url,ancho,alto) {
+        var posicion_x; 
+        var posicion_y;
+        posicion_x=(screen.width/2)-(ancho/2); 
+        posicion_y=(screen.height/2)-(alto/2);
+        window.open(url, "leonpurpura.com", "width="+ancho+",height="+alto+",menubar=0,toolbar=0,directories=0,scrollbars=no,resizable=no,left="+posicion_x+",top="+posicion_y+"");
+        }
+      //window.open("http://www.usmp.edu.pe/iced/popup.html","PopUp","width=530, height=327, scrollbars=no, menubar=no, status=no, location=no, resizable=no");
+    </script>
+
+cargando script...
+
+<body ng-controller="route" , onload="popup('http://www.usmp.edu.pe/iced/popup.html' , 755 , 456)">
