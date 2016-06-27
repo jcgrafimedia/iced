@@ -2,7 +2,8 @@ extends ../layouts/layout
 block content
 	section(id="container_noticias" , class="container-fluid")
 		div(class="row")
-			h3 NOTICIAS
+			img(id="img_noticias" , src="{{ruta_base}}assets/img/img_boletin.gif", alt="" , class="img-responsive")
+			h3(class="efecto-espejo") NOTICIAS
 			article
 				a(href="{{ ruta_base }}noticias/articulo_1.html" , class="title") Movilidad Académica a España
 				
