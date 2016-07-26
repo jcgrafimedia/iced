@@ -1,0 +1,33 @@
+extends ../layouts/layout
+block content
+	section(id="container_graduados" , class="container-fluid")
+		div(class="row")
+			h3 INSCRIPCIONES “ASOCIACIÓN DE GRADUADOS” Y “CÍRCULO DE EGRESADOS” DEL INSTITUTO PARA LA CALIDAD DE LA EDUCACIÓN
+			img(class="img-responsive" , src="{{ ruta_base }}assets/img/img_iced/egresados.jpg", alt="")
+
+			p La “ASOCIACIÓN DE GRADUADOS” y el  “CÍRCULO DE EGRESADOS” está conformado por los  maestristas y doctorandos del Instituto para la Calidad de la Educación de la Universidad de San Martín de Porres. La asociación tiene entre sus miembros a  los egresados graduados como Maestros y/o Doctores en Educación y, el círculo está conformado por los egresados no graduados.
+
+			p Los beneficios que reciben los egresados y graduados del ICED inscritos en cualquiera de estas  organizaciones, son los siguientes:
+
+			ul(class="row")
+				li Acceso libre  a los beneficios  de la  bolsa de trabajo.
+				li Recepción de invitaciones personales para participar como ponentes o expositores en los diversos eventos nacionales e internacionales.
+				li Publicación de artículos propios de su especialidad en el Boletín Informativo y/o Revista Encuentro Educativo del ICED.
+				li Descuentos especiales por concepto de inscripciones a los diversos seminarios, talleres, cursos, foros, etc.
+				li Contar con un carnet que le permita beneficiarse de los servicios que brinda la Biblioteca de la USMP.
+				li Recepción periódica de documentos y/o materiales informativos de naturaleza educativa a través de diversos medios (boletines, convocatorias, revistas, etc.).
+				li Invitaciones especiales a reencuentros anuales.
+
+			<br>
+
+			span(class="text_center") ¡TE INVITAMOS A INSCRIBIRTE..!
+
+			div(class="btn_group1 col-xs-12 hidden-xs")
+				a(href="{{ ruta_base }}pdfs/iced/inscripciones/Ficha_Inscripcion-Asociacion_Graduados.docx" , class="btn btn-info btn-lg btn_enlace col-md-5") Ficha de Incripción a la <br>"Asociacion Graduados"
+				a(href="{{ ruta_base }}pdfs/iced/inscripciones/Ficha_Inscripcion-Circulo_Egresado.docx" , class="btn btn-success btn-lg btn_enlace col-md-5") Ficha de Incripción al <br>"Circulo de Egresados"
+			div(class="btn_group2 col-xs-12 hidden-sm hidden-md hidden-lg")
+				a(href="{{ ruta_base }}pdfs/iced/inscripciones/Ficha_Inscripcion-Asociacion_Graduados.docx" , class="btn btn-info btn-lg btn_enlace col-xs-12") Ficha de Incripción a la <br>"Asociacion Graduados"
+				a(href="{{ ruta_base }}pdfs/iced/inscripciones/Ficha_Inscripcion-Circulo_Egresado.docx" , class="btn btn-success btn-lg btn_enlace col-xs-12") Ficha de Incripción al <br>"Circulo de Egresados"
+
+
+			

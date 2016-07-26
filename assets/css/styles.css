@@ -275,7 +275,7 @@ header #container_header #container_menu nav ul li #sub_iced #sub_investigacione
 
 header #container_header #container_menu nav ul li #sub_iced #sub_egresados {
   width: 200px;
-  height: 123px;
+  height: 82px;
   position: absolute;
   background-color: #EDEEF0;
   border-radius: 0px 0px 5px 5px;
@@ -1600,46 +1600,59 @@ section article .container_article ol {
   margin-left: 30px;
 }
 
-#container_graduados .enlace_container {
-  width: 100%;
-  height: auto;
-  background-color: #B55858;
-  border-radius: 8px 0px 0px 8px;
-  border: 1px solid #DADADA;
-  margin: 20px 0px 20px 0px;
+#container_graduados .text_center {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  margin-bottom: 2%;
 }
 
-#container_graduados .enlace_container .enlace {
-  width: 99%;
-  height: 38px;
-  background-color: #F1F1F1;
-  border-radius: 8px 0px 0px 8px;
+#container_graduados .btn_group1 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-#container_graduados .enlace_container .enlace a {
-  margin-left: 20px;
-  text-decoration: none;
+#container_graduados .btn_group1 .btn_enlace {
+  margin: 2%;
+}
+
+#container_graduados .btn_group2 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container_graduados .btn_group2 .btn_enlace {
+  margin: 2%;
 }
 
 /* Egresados / Circulo Egresados  Styles
